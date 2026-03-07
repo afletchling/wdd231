@@ -171,7 +171,6 @@ footer a img {
 #results {
     display: flex;
     flex-direction: column;
-    justify-content: none;
 }
 
 #results p {
