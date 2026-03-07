@@ -1,0 +1,194 @@
+:root {
+    --main-font: Arial, Helvetica, sans-serif;
+    --header-font: "Montserrat", sans-serif;
+    --nav-color: #222
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 40px auto 32px;
+    font-family: var(--header-font);
+    align-items: center;
+    padding: 0.5rem;
+}
+
+header img {
+    width: 32px;
+    height: auto;
+}
+
+nav {
+    background-color: var(--nav-color);
+    color: white;
+    grid-column: 1/4;
+    margin-top: 0.5rem;
+}
+
+nav ul {
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+nav li {
+    flex: 1 1 auto;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    color: white;
+}
+
+nav a:hover {
+    background-color: #333;
+}
+
+main {
+    font-family: var(--main-font);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0.5rem 1rem;
+    padding: 0 1rem;
+}
+
+h1 {
+    flex: 100%;
+}
+
+h2 {
+    background-color: var(--nav-color);
+    color: white;
+    text-align: center;
+    font-size: larger;
+    padding: 0.3rem;
+}
+
+section {
+    background-color: #bbb;
+}
+
+section p {
+    margin: 0.5rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    background-color: #bbb;
+    color: black;
+    text-align: center;
+    font-family: var(--header-font);
+}
+
+footer a img {
+    width: 48px;
+}
+
+/* Class Selectors */
+
+.navigation {
+    display: none;
+}
+
+.navigation.active {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ID Selectors */
+
+#menu {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background-color: #bbb;
+    color: black;
+    border: none;
+    font-size: 1.2rem;
+    float: right;
+    text-decoration: none;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.active::before {
+    content: "X";
+}
+
+#about {
+    flex: 60%;
+}
+
+#photo {
+    flex: 30%;
+}
+
+#photo h2 {
+    grid-column: 1/4;
+}
+
+#photo img {
+    display: block;
+    border: solid 1px #333;
+    border-radius: 0.5rem;
+    margin: 0.5rem auto;
+}
+
+#certs {
+    flex: 100%;
+    background-color: white;
+}
+
+#filters {
+    display: flex;
+    justify-content: space-around;
+}
+
+#filters button {
+    width: 100%;
+    padding: 0.2rem;
+    margin: 0.5rem;
+}
+
+#results {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+}
+
+#results p {
+    flex: 25%;
+    text-align: center;
+    background-color: #bbb;
+    border: solid 1px #333;
+    padding: 0.2rem;
+}
+
+#results p.completed {
+    background-color: #22ff22;
+}
+
+#credits {
+    display: block;
+    text-align: center;
+    font-size: larger;
+    margin: 0.5rem;
+}

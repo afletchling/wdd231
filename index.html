@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD231 Home Page</title>
+    <meta name="description" content="Basic home page describing various accomplishments and completed courses.">
+    <meta name="author" content="Aiden Fletcher">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/fuel-pump-fill.svg" alt="Site Logo">
+        <span>Aiden Fletcher</span>
+        <button id="menu" title="Navigation Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="chamber.html">Chamber Project</a></li>
+                <li><a href="project.html">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! My name's Aiden, and I'm a developer geared towards writing wacky projects.
+                One of my favorite passtimes to partake in is going on walks outside.
+                My main focus nowadays is creating whatever ideas pop up to me :)
+            </p>
+        </section>
+        <section id="photo">
+            <h2>Student Photo</h2>
+            <img src="images/profile.png" alt="Author photo">
+        </section>
+        <section id="certs">
+            <h2>Web Certificate Courses</h2>
+            <div id="filters"></div>
+            <div id="results"></div>
+            <span id="credits"></span>
+        </section>
+    </main>
+    <footer>
+        <a href="https://github.com/afletchling/wdd231">
+            <img src="images/github.svg" alt="Github Page">
+        </a>
+        <p>&copy;<span id="currentyear"></span> &#10059; Aiden Fletcher &#10059; Alberta, Canada</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,31 @@
+@media (min-width: 37.5em) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        gap: 1rem;
+        padding: 0.1rem;
+    }
+
+    nav li {
+        flex: none;
+    }
+
+    /* Class Selectors */
+
+    .navigation {
+        display: flex;
+    }
+
+    /* ID Selectors */
+
+    #menu {
+        display: none;
+    }
+
+    #results {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
