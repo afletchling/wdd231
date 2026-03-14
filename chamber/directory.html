@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lethbridge Chamber Directory</title>
+    <meta name="description" content="Listing for local businesses and event details.">
+    <meta name="author" content="Aiden Fletcher">
+    <meta property="og:title" content="Lethbridge Chamber Directory">
+    <meta property="og:description" content="Listing for local businesses and event details.">
+    <meta property="og:image" content="images/full-hero-image.jpg">
+    <meta property="og:url" content="https://afletchling.github.io/wdd231/chamber/directory.html">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/box-seam-fill.svg" alt="Site Logo">
+        <span>Lethbridge Chamber of Commerce</span>
+        <button id="menu" title="Navigation Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img src="images/full-hero-image.jpg" alt="Landscape Photo">
+        <h1>Home</h1>
+        <div class="cards">
+            <section>
+                <h3>Events</h3>
+            </section>
+            <section>
+                <h3>Current Weather</h3>
+                <div class="weather">
+                    <img src="images/sun-and-clouds.svg" alt="Weather Icon">
+                    <p>
+                        <span class="bold">65F</span> <br>
+                        Partly Cloudy <br>
+                        High: 81F <br>
+                        Low: 63F <br>
+                    </p>
+                </div>
+            </section>
+            <section>
+                <h3>Weather Forecast</h3>
+                <p>
+                    Today: <span class="bold">90F</span> <br>
+                    Wednesday: <span class="bold">82F</span> <br>
+                    Thursday: <span class="bold">66F</span> <br>
+                </p>
+            </section>
+        </div>
+        <div class="business"></div>
+    </main>
+    <footer>
+        <section>
+            <p>
+                <span class="bold">Lethbridge Chamber of Commerce</span> <br>
+                123 Goreman Street <br>
+                Lethbridge, FAE 0FR <br>
+                info@lethbridge.org <br>
+                (403) 294-2233 <br>
+            </p>
+        </section>
+        <section>
+            <a href="https://github.com/afletchling/wdd231">
+                <img src="images/github.svg" alt="Github Page">
+            </a>
+        </section>
+        <section>
+            <p>
+                WDD231 Class Project <br>
+                Aiden Fletcher <br>
+                &copy; <span id="currentyear"></span> Lethbridge Chamber of Commerce <br>
+            </p>
+            <p id="lastModified"></p>
+        </section>
+    </footer>
+</body>
+</html>

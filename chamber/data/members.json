@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Business One",
+        "subtitle": "Sub One",
+        "address": "123 Street One",
+        "phone": "(403) 144-2845",
+        "url": "https://businessone.org",
+        "image": "images/box-seam-fill-dark.svg"
+    },
+    {
+        "name": "Business Two",
+        "subtitle": "Sub Two",
+        "address": "123 Street Two",
+        "phone": "(403) 144-2846",
+        "url": "https://businesstwo.org",
+        "image": "images/box-seam-fill-dark.svg"
+    },
+    {
+        "name": "Business Three",
+        "subtitle": "Sub Three",
+        "address": "123 Street Three",
+        "phone": "(403) 144-2847",
+        "url": "https://businessthree.org",
+        "image": "images/box-seam-fill-dark.svg"
+    },
+    {
+        "name": "Business Four",
+        "subtitle": "Sub Four",
+        "address": "123 Street Four",
+        "phone": "(403) 144-2848",
+        "url": "https://businessfour.org",
+        "image": "images/box-seam-fill-dark.svg"
+    },
+    {
+        "name": "Business Five",
+        "subtitle": "Sub Five",
+        "address": "123 Street Five",
+        "phone": "(403) 144-2849",
+        "url": "https://businessfive.org",
+        "image": "images/box-seam-fill-dark.svg"
+    },
+    {
+        "name": "Business Six",
+        "subtitle": "Sub Six",
+        "address": "123 Street Six",
+        "phone": "(403) 144-2850",
+        "url": "https://businesssix.org",
+        "image": "images/box-seam-fill-dark.svg"
+    },
+    {
+        "name": "Business Seven",
+        "subtitle": "Sub Seven",
+        "address": "123 Street Seven",
+        "phone": "(403) 144-2851",
+        "url": "https://businessseven.org",
+        "image": "images/box-seam-fill-dark.svg"
+    }
+]
