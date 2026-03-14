@@ -1,4 +1,8 @@
 @media (min-width: 37.5em) {
+    main {
+        margin: 0 5rem;
+    }
+
     nav {
         grid-column: 3/5;
     }
