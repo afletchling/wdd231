@@ -5,8 +5,8 @@ const businessHolder = document.querySelector('.business');
 if (businessHolder) {
     function createCompany(company) {
         const holder = document.createElement('section');
-        const title = document.createElement('h3');
-        const subtitle = document.createElement('h4');
+        const title = document.createElement('h2');
+        const subtitle = document.createElement('h3');
         const detail = document.createElement('div');
         const image = document.createElement('img');
         const data = document.createElement('p');
@@ -14,6 +14,7 @@ if (businessHolder) {
         subtitle.textContent = company.subtitle || '';
         detail.classList.add('business-detail');
         image.src = company.image || '';
+        image.alt = company.name || '';
         data.innerHTML = `
             <span class="bold">ADDRESS:</span> ${company.address || ''} <br>
             <span class="bold">PHONE:</span> ${company.phone || ''} <br>
