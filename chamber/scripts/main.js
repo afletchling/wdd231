@@ -1,6 +1,7 @@
 const navButton = document.getElementById('menu');
 const navHolder = document.querySelector('.navigation');
 const businessHolder = document.querySelector('.business');
+const viewButton = document.getElementById('view');
 
 if (businessHolder) {
     function createCompany(company) {
@@ -28,6 +29,12 @@ if (businessHolder) {
         detail.appendChild(data);
         businessHolder.appendChild(holder);
     }
+
+    viewButton.addEventListener('click', () => {
+        businessHolder.classList.toggle('grid');
+        businessHolder.classList.toggle('list');
+        viewButton.textContent = `Change View: ${businessHolder.classList.contains('list') ? 'List' : 'Grid'}`;
+    });
 
     fetch('data/members.json').then(data => data.json()).then(data => {
         for (const company of data) {

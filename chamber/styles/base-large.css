@@ -4,7 +4,7 @@
     }
 
     main {
-        margin: 0 5rem;
+        margin: 0 5rem 1rem 5rem;
     }
 
     nav {
@@ -37,11 +37,5 @@
 
     #menu {
         display: none;
-    }
-
-    #results {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
     }
 }

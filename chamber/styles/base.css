@@ -153,6 +153,20 @@ footer section {
 .business section {
     color: black;
     background-color: var(--background-color);
+}
+
+.business h2 {
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+.business h3 {
+    font-weight: lighter;
+}
+
+.business.grid section {
+    color: black;
+    background-color: var(--background-color);
     margin: auto;
     flex: 1 20%;
     min-width: 250px;
@@ -161,18 +175,33 @@ footer section {
     text-align: center;
 }
 
-.business h2 {
-    font-weight: lighter;
-    font-size: 24px;
+.business.grid h2 {
     padding: 0.5rem 0;
     grid-column: 1/3;
 }
 
-.business h3 {
-    font-weight: lighter;
+.business.grid h3 {
     padding-bottom: 0.5rem;
     border-bottom: 1px solid black;
     grid-column: 1/3;
+}
+
+.business.list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.business.list h2 {
+    padding: 1rem 1rem 0 1rem;
+
+}
+
+.business.list h3 {
+    padding-left: 1rem;
+}
+
+.business.list img {
+    display: none;
 }
 
 .business-detail {
@@ -214,4 +243,18 @@ footer section {
 
 #menu.active::before {
     content: "X";
+}
+
+#view {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    color: white;
+    background-color: var(--primary-color);
+    font-size: large;
+    border: none;
+}
+
+#view:hover {
+    background-color: var(--secondary-color);
 }
