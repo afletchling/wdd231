@@ -30,17 +30,24 @@ if (businessHolder) {
         businessHolder.appendChild(holder);
     }
 
+    async function queryCompanyData() {
+        let data = await fetch('data/members.json');
+        if (data.ok) {
+            data = await data.json();
+
+            for (const company of data) {
+                createCompany(company);
+            }
+        }
+    }
+
     viewButton.addEventListener('click', () => {
         businessHolder.classList.toggle('grid');
         businessHolder.classList.toggle('list');
         viewButton.textContent = `Change View: ${businessHolder.classList.contains('list') ? 'List' : 'Grid'}`;
     });
 
-    fetch('data/members.json').then(data => data.json()).then(data => {
-        for (const company of data) {
-            createCompany(company);
-        }
-    }).catch(reason => console.error(`Failed to fetch company data: ${reason}`));
+    queryCompanyData();
 }
 
 if (navButton) {

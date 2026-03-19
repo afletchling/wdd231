@@ -27,6 +27,11 @@
         flex: none;
     }
 
+    footer {
+        text-align: left;
+        flex-direction: row;
+    }
+
     /* Class Selectors */
 
     .navigation {
