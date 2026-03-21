@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lethbridge Chamber Directory</title>
-    <meta name="description" content="View page for all attending local Lethbridge businesses.">
+    <title>Lethbridge Chamber of Commerce</title>
+    <meta name="description" content="Listing for local Lethbridge businesses and event details.">
     <meta name="author" content="Aiden Fletcher">
-    <meta property="og:title" content="Lethbridge Chamber Directory">
-    <meta property="og:description" content="View page for all attending local Lethbridge businesses.">
+    <meta property="og:title" content="Lethbridge Chamber of Commerce">
+    <meta property="og:description" content="Listing for local Lethbridge businesses and event details.">
     <meta property="og:image" content="https://afletchling.github.io/wdd231/chamber/images/full-hero-image.jpg">
-    <meta property="og:url" content="https://afletchling.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://afletchling.github.io/wdd231/chamber/index.html">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -27,16 +27,35 @@
         <button id="menu" title="Navigation Menu"></button>
         <nav>
             <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="directory.html">Directory</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <img src="images/full-hero-image.jpg" alt="Landscape Photo">
-        <h1>Directory</h1>
+        <div id="call-div">
+            <img src="images/full-hero-image.jpg" alt="Landscape Photo">
+            <a id="call-action" href="join.html">Apply Now</a>
+        </div>
+        <h1>Home</h1>
+        <div class="cards">
+            <section>
+                <h2>Events</h2>
+                <ul>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, perspiciatis.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Current Weather</h2>
+                <div class="weather">
+                    <img src="images/sun-and-clouds.svg" alt="Weather Icon">
+                    <p id="weather-data"></p>
+                </div>
+            </section>
+        </div>
+        <h1>Spotlights</h1>
         <button id="view">Change View: Grid</button>
         <div class="business grid"></div>
     </main>
