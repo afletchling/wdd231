@@ -38,6 +38,10 @@
         display: flex;
     }
 
+    .business p {
+        width: max-content;
+    }
+
     /* ID Selectors */
 
     #menu {

@@ -164,10 +164,6 @@ footer section {
     background-color: var(--background-color);
 }
 
-.business p {
-    width: max-content;
-}
-
 .business h2 {
     font-weight: lighter;
     font-size: 24px;
@@ -232,6 +228,18 @@ footer section {
     padding: 1rem;
 }
 
+.form-item {
+    margin: 0.5rem;
+}
+
+.form-item label {
+    margin-right: 0.5rem;
+}
+
+.form-item select {
+    padding: 0.2rem;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -293,4 +301,31 @@ footer section {
 
 #call-action:hover {
     background-color: var(--secondary-color);
+}
+
+#apply-form button {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 0.5cap;
+}
+
+#apply-form input {
+    padding: 0.5rem;
+}
+
+#apply-form fieldset {
+    margin: 1rem 0;
+    font-size: larger;
+}
+
+#apply-form legend {
+    font-weight: bold;
+}
+
+#description {
+    vertical-align: top;
 }
