@@ -52,15 +52,15 @@
                 <legend>Organization Information</legend>
                 <div class="form-item">
                     <label for="orgname">Name:</label>
-                    <input type="text" id="orgname" name="orgname" title="Organization name" pattern="[a-zA-Z]" autocomplete="organization" required>
+                    <input type="text" id="orgname" name="orgname" title="Organization name" autocomplete="organization" required>
                 </div>
                 <div class="form-item">
                     <label for="orgtitle">Title:</label>
-                    <input type="text" id="orgtitle" name="orgtitle" title="Organization title" autocomplete="organization-title">
+                    <input type="text" id="orgtitle" name="orgtitle" title="Organization title" pattern="[-a-zA-Z ]{7,}" autocomplete="organization-title">
                 </div>
                 <div class="form-item">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" title="Email" autocomplete="email" required>
+                    <input type="email" id="email" name="email" title="Email" autocomplete="email" placeholder="name@example.com" required>
                 </div>
                 <div class="form-item">
                     <label for="phone">Phone Number:</label>
@@ -68,7 +68,7 @@
                 </div>
                 <div class="form-item">
                     <label for="description">Description:</label>
-                    <textarea id="description" title="Organization description"></textarea>
+                    <textarea id="description" name="description" title="Organization description"></textarea>
                 </div>
                 <div class="form-item">
                     <label for="membership">Membership Level:</label>
