@@ -326,6 +326,12 @@ footer section {
     font-weight: bold;
 }
 
+#thank-you {
+    padding: 1rem;
+    text-align: center;
+    font-size: 36px;
+}
+
 #description {
     vertical-align: top;
 }

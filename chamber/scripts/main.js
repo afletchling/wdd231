@@ -1,6 +1,10 @@
 const navButton = document.getElementById('menu');
 const navHolder = document.querySelector('.navigation');
 const businessHolder = document.querySelector('.business');
+
+const timestampField = document.getElementById('timestamp');
+const thankYouMessage = document.getElementById('thank-you');
+
 const weatherData = document.getElementById('weather-data');
 const viewButton = document.getElementById('view');
 
@@ -86,4 +90,22 @@ if (weatherData) {
     };
 
     fillData();
+}
+
+if (thankYouMessage) {
+    const args = new URLSearchParams(window.location.search);
+
+    thankYouMessage.innerHTML = `
+        Thank you for applying! <br>
+        First Name: ${args.get('firstname')} <br>
+        Last Name: ${args.get('lastname')} <br>
+        Organization Name: ${args.get('orgname')} <br>
+        Email: ${args.get('email')} <br>
+        Phone Number: ${args.get('phone')} <br>
+        Timestamp: ${args.get('timestamp')} <br>
+    `;
+}
+
+if (timestampField) {
+    timestampField.value = Date.now();
 }

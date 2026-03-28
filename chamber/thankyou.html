@@ -35,53 +35,7 @@
         </nav>
     </header>
     <main>
-        <form method="get" action="thankyou.html" id="apply-form">
-            <fieldset>
-                <legend>Applicant Information</legend>
-                <div class="form-item">
-                    <label for="firstname">First Name:</label>
-                    <input type="text" id="firstname" name="firstname" autocomplete="given-name" required>
-                </div>
-                <div class="form-item">
-                    <label for="lastname">Last Name:</label>
-                    <input type="text" id="lastname" name="lastname" autocomplete="family-name" required>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Organization Information</legend>
-                <div class="form-item">
-                    <label for="orgname">Name:</label>
-                    <input type="text" id="orgname" name="orgname" autocomplete="organization" required>
-                </div>
-                <div class="form-item">
-                    <label for="orgtitle">Title:</label>
-                    <input type="text" id="orgtitle" name="orgtitle" autocomplete="organization-title">
-                </div>
-                <div class="form-item">
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" name="email" autocomplete="email" required>
-                </div>
-                <div class="form-item">
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" autocomplete="tel" required>
-                </div>
-                <div class="form-item">
-                    <label for="description">Description:</label>
-                    <textarea id="description"></textarea>
-                </div>
-                <div class="form-item">
-                    <label for="membership">Membership Level:</label>
-                    <select name="membership" id="membership">
-                        <option value="np">NP</option>
-                        <option value="bronze">Bronze</option>
-                        <option value="silver">Silver</option>
-                        <option value="gold">Gold</option>
-                    </select>
-                </div>
-            </fieldset>
-            <input type="hidden" id="timestamp" name="timestamp" required>
-            <button type="submit">Apply Now</button>
-        </form>
+        <p id="thank-you"></p>
     </main>
     <footer>
         <section>
