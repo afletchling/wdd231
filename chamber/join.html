@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lethbridge Chamber Application</title>
+    <meta name="description" content="Listing for local Lethbridge businesses and event details.">
+    <meta name="author" content="Aiden Fletcher">
+    <meta property="og:title" content="Lethbridge Chamber of Commerce">
+    <meta property="og:description" content="Listing for local Lethbridge businesses and event details.">
+    <meta property="og:image" content="https://afletchling.github.io/wdd231/chamber/images/full-hero-image.jpg">
+    <meta property="og:url" content="https://afletchling.github.io/wdd231/chamber/index.html">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/box-seam-fill.svg" alt="Site Logo">
+        <span>Lethbridge Chamber of Commerce</span>
+        <button id="menu" title="Navigation Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a class="active" href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form method="get" id="apply-form">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <div class="form-item">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" autocomplete="given-name" required>
+                </div>
+                <div class="form-item">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" autocomplete="family-name" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Organization Information</legend>
+                <div class="form-item">
+                    <label for="orgname">Name:</label>
+                    <input type="text" id="orgname" name="orgname" autocomplete="organization" required>
+                </div>
+                <div class="form-item">
+                    <label for="orgtitle">Title:</label>
+                    <input type="text" id="orgtitle" name="orgtitle" autocomplete="organization-title" required>
+                </div>
+                <div class="form-item">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" autocomplete="email" required>
+                </div>
+                <div class="form-item">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+                </div>
+                <div class="form-item">
+                    <label for="description">Description:</label>
+                    <textarea id="description"></textarea>
+                </div>
+                <div class="form-item">
+                    <label for="membership">Membership Level:</label>
+                    <select name="membership" id="membership">
+                        <option value="np">NP</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
+                    </select>
+                </div>
+            </fieldset>
+            <input type="hidden" id="timestamp" name="timestamp">
+            <button type="submit">Apply Now</button>
+        </form>
+    </main>
+    <footer>
+        <section>
+            <p>
+                <span class="bold">Lethbridge Chamber of Commerce</span> <br>
+                123 Goreman Street <br>
+                Lethbridge, FAE 0FR <br>
+                info@lethbridge.org <br>
+                (403) 294-2233 <br>
+            </p>
+        </section>
+        <section>
+            <a href="https://github.com/afletchling/wdd231">
+                <img src="images/github.svg" alt="Github Page">
+            </a>
+        </section>
+        <section>
+            <p>
+                WDD231 Class Project <br>
+                Aiden Fletcher <br>
+                &copy; <span id="currentyear"></span> Lethbridge Chamber of Commerce <br>
+            </p>
+            <p id="lastModified"></p>
+        </section>
+    </footer>
+</body>
+</html>
