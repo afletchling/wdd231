@@ -107,5 +107,5 @@ if (thankYouMessage) {
 }
 
 if (timestampField) {
-    timestampField.value = Date.now();
+    timestampField.value = new Date(Date.now()).toLocaleString('en-us');
 }
