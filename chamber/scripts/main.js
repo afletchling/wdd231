@@ -100,7 +100,7 @@ if (memberHolder) {
     for (const membership of MEMBERSHIPS) {
         const memberButton = memberHolder.querySelector(`#${membership}`);
         const memberDialog = document.getElementById(`${membership}-dialog`);
-        const closeButton = memberDialog.querySelector('#close-dialog');
+        const closeButton = memberDialog.querySelector('close-dialog');
 
         memberButton.addEventListener('click', () => {
             memberDialog.showModal();
