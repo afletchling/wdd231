@@ -8,6 +8,8 @@ const thankYouMessage = document.getElementById('thank-you');
 const weatherData = document.getElementById('weather-data');
 const viewButton = document.getElementById('view');
 
+const memberHolder = document.getElementById('membership-holder');
+
 if (navButton) {
 	navButton.addEventListener('click', () => {
 		navButton.classList.toggle('active');
@@ -90,6 +92,24 @@ if (weatherData) {
     };
 
     fillData();
+}
+
+if (memberHolder) {
+    const MEMBERSHIPS = ['gold', 'silver', 'bronze', 'na'];
+
+    for (const membership of MEMBERSHIPS) {
+        const memberButton = memberHolder.querySelector(`#${membership}`);
+        const memberDialog = document.getElementById(`${membership}-dialog`);
+        const closeButton = memberDialog.querySelector('#close-dialog');
+
+        memberButton.addEventListener('click', () => {
+            memberDialog.showModal();
+        });
+
+        closeButton.addEventListener('click', () => {
+            memberDialog.close();
+        })
+    }
 }
 
 if (thankYouMessage) {

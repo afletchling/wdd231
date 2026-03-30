@@ -47,4 +47,14 @@
     #menu {
         display: none;
     }
+
+    #apply-page {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+
+    #membership-holder {
+        justify-content: center;
+    }
 }

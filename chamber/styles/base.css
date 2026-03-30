@@ -3,7 +3,7 @@
     --header-font: "Montserrat", sans-serif;
     --primary-color: #6c2bad;
     --secondary-color: #602b96;
-    --active-color: #7b37bf;
+    --active-color: #532c79;
     --background-color: #dadada;
     --text-color: white;
 }
@@ -69,6 +69,31 @@ nav a.active {
 
 nav a:hover {
     background-color: var(--secondary-color);
+}
+
+dialog {
+    margin: auto auto;
+}
+
+dialog h2 {
+    text-align: center;
+    margin: 0.5rem;
+}
+
+dialog p {
+    text-align: center;
+    margin: 0.5rem;
+}
+
+dialog button {
+    display: block;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    font-size: large;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 0.5cap;
 }
 
 footer {
@@ -303,6 +328,10 @@ footer section {
     background-color: var(--secondary-color);
 }
 
+#apply-form {
+    margin-bottom: 1rem;
+}
+
 #apply-form button {
     display: block;
     margin: 0 auto;
@@ -315,6 +344,7 @@ footer section {
 
 #apply-form input {
     padding: 0.5rem;
+    width: 100%;
 }
 
 #apply-form fieldset {
@@ -326,6 +356,40 @@ footer section {
     font-weight: bold;
 }
 
+#membership-holder {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: auto auto;
+}
+
+#membership-holder a {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: larger;
+    border-radius: 0.5cap;
+    padding: 1rem;
+    animation: fadeEffect 1s ease-in-out;
+}
+
+#gold {
+    background-color: #ffb731;
+}
+
+#silver {
+    background-color: #adadad;
+}
+
+#bronze {
+    background-color: #634000;
+    color: white;
+}
+
+#na {
+    background-color: var(--background-color);
+}
+
 #thank-you {
     padding: 1rem;
     text-align: center;
@@ -334,4 +398,16 @@ footer section {
 
 #description {
     vertical-align: top;
+}
+
+/* Animations */
+
+@keyframes fadeEffect {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
