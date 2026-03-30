@@ -73,6 +73,9 @@ nav a:hover {
 
 dialog {
     margin: auto auto;
+    background-color: var(--background-color);
+    border: 1px solid black;
+    border-radius: 1cap;
 }
 
 dialog h2 {
