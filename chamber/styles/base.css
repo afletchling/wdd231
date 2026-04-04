@@ -99,6 +99,40 @@ dialog button {
     border-radius: 0.5cap;
 }
 
+figure {
+    padding: 0 1rem;
+    background-color: var(--background-color);
+    border-radius: 0.5cap;
+}
+
+figure h2 {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+figure p, figure address {
+    text-align: center;
+    font-size: larger;
+    margin-bottom: 0.5rem;
+}
+
+figure img {
+    border-radius: 0.5cap;
+    border: 3px solid black;
+    transition: border-color 0.5s ease;
+}
+
+figure button {
+    display: block;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    font-size: large;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 0.5cap;
+}
+
 footer {
     font-family: var(--header-font);
     background-color: var(--primary-color);
@@ -375,6 +409,15 @@ footer section {
     animation: fadeEffect 1s ease-in-out;
 }
 
+#discover-holder {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+        "a"
+        "b"
+        "c";
+}
+
 #gold {
     background-color: #ffb731;
 }
@@ -400,6 +443,13 @@ footer section {
 
 #description {
     vertical-align: top;
+}
+
+#welcome-message {
+    font-size: larger;
+    background-color: var(--background-color);
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Animations */

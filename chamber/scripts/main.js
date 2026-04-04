@@ -10,6 +10,8 @@ const viewButton = document.getElementById('view');
 
 const memberHolder = document.getElementById('membership-holder');
 
+const discoveryHolder = document.getElementById('discover-holder');
+
 if (navButton) {
 	navButton.addEventListener('click', () => {
 		navButton.classList.toggle('active');
@@ -68,6 +70,57 @@ if (businessHolder) {
     });
 
     queryCompanyData();
+}
+
+if (discoveryHolder) {
+    function createDiscoverCard(business) {
+        const holder = document.createElement('figure');
+        const title = document.createElement('h2');
+        const address = document.createElement('address');
+        const description = document.createElement('p');
+        const image = document.createElement('img');
+        const button = document.createElement('button');
+        title.textContent = business.name || '';
+        address.textContent = business.address || '';
+        description.textContent = business.description || '';
+        button.textContent = 'Learn More';
+        image.src = business.image || '';
+        image.alt = business.name || '';
+
+        holder.appendChild(title);
+        holder.appendChild(image);
+        holder.appendChild(address);
+        holder.appendChild(description);
+        holder.appendChild(button);
+        discoveryHolder.appendChild(holder);
+    }
+
+    async function displayDiscovery() {
+        const {default: data} = await import('../data/discovery.mjs');
+
+        for (const business of data) {
+            createDiscoverCard(business);
+        }
+    }
+
+    const welcomeMessage = document.getElementById('welcome-message');
+    if (welcomeMessage) {
+        if (localStorage.getItem('lastVisit')) {
+            const daysSince = Math.floor((Date.now() - Number.parseInt(localStorage.getItem('lastVisit'))) / (24 * 60 * 60 * 1000));
+
+            if (daysSince >= 1) {
+                welcomeMessage.textContent = `You last visited ${daysSince} days ago.`;
+            } else {
+                welcomeMessage.textContent = 'Back so soon! Awesome!';
+            }
+        } else {
+            welcomeMessage.textContent = 'Welcome! Let us know if you have any questions.'
+        }
+
+        localStorage.setItem('lastVisit', Date.now());
+    }
+
+    displayDiscovery();
 }
 
 if (weatherData) {
