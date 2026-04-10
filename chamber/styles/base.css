@@ -100,14 +100,22 @@ dialog button {
 }
 
 figure {
+    display: grid;
     padding: 0 1rem;
     background-color: var(--background-color);
     border-radius: 0.5cap;
+    grid-template-areas:
+        "title"
+        "image"
+        "address"
+        "description"
+        "submit";
 }
 
 figure h2 {
     text-align: center;
     padding: 0.5rem;
+    grid-area: title;
 }
 
 figure p, figure address {
@@ -116,10 +124,19 @@ figure p, figure address {
     margin-bottom: 0.5rem;
 }
 
+figure p {
+    grid-area: description;
+}
+
+figure address {
+    grid-area: address;
+}
+
 figure img {
     border-radius: 0.5cap;
     border: 3px solid black;
-    transition: border-color 0.5s ease;
+    transition: border-color 0.5s ease, opacity 0.5s ease;
+    grid-area: image;
 }
 
 figure button {
@@ -131,6 +148,7 @@ figure button {
     color: var(--text-color);
     border: none;
     border-radius: 0.5cap;
+    grid-area: submit;
 }
 
 footer {

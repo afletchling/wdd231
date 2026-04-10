@@ -86,6 +86,7 @@ if (discoveryHolder) {
         button.textContent = 'Learn More';
         image.src = business.image || '';
         image.alt = business.name || '';
+        image.loading = 'lazy';
 
         holder.appendChild(title);
         holder.appendChild(image);

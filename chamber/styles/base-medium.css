@@ -27,6 +27,19 @@
         flex: none;
     }
 
+    figure {
+        grid-template-areas:
+        "image title"
+        "image title"
+        "image address"
+        "image description"
+        "submit submit";
+    }
+
+    figure img {
+        margin-top: 1rem;
+    }
+
     footer {
         text-align: left;
         flex-direction: row;

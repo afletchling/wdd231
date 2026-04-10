@@ -1,6 +1,7 @@
 @media (min-width: 80.5em) {
     figure img:hover {
         border-color: var(--primary-color);
+        opacity: 0.75;
     }
 
     /* ID Selectors */
