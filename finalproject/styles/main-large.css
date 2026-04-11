@@ -1,0 +1,27 @@
+@media (min-width: 37.5em) {
+    header {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    nav {
+        grid-column: auto;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Class Selectors */
+
+    .navigation {
+        display: flex;
+    }
+
+    /* ID Selectors */
+
+    #menu {
+        display: none;
+    }
+}
