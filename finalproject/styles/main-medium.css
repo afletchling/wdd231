@@ -1,4 +1,30 @@
 @media (min-width: 40.5em) {
+    header {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    nav {
+        grid-column: auto;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    section {
+        grid-template-areas:
+            "title desc"
+            "title desc";
+    }
+
+    /* Class Selectors */
+
+    .navigation {
+        display: flex;
+    }
+
     /* ID Selectors */
 
     #card-holder {
@@ -6,5 +32,9 @@
             "a b"
             "c d"
             "e f";
+    }
+
+    #menu {
+        display: none;
     }
 }
