@@ -1,6 +1,9 @@
 const cardHolder = document.getElementById('card-holder');
 const searchHolder = document.getElementById('search-form');
 const filterHolder = document.getElementById('filter-holder');
+const navButton = document.getElementById('menu');
+const navHolder = document.querySelector('.navigation');
+
 let cards = [];
 const filters = {
     'All': () => true,
@@ -92,3 +95,10 @@ async function run() {
 }
 
 run();
+
+if (navButton) {
+    navButton.addEventListener('click', () => {
+        navButton.classList.toggle('active');
+        navHolder.classList.toggle('active');
+    });
+}
