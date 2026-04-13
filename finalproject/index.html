@@ -6,12 +6,18 @@
     <title>Advanced Stock Analytics: Main</title>
     <meta name="description" content="A centralized and combined place to view the latest stock analytics.">
     <meta name="author" content="Aiden Fletcher">
+    <meta name="og:title" content="Advanced Stock Analytics: Main">
+    <meta name="og:description" content="A centralized and combined place to view the latest stock analytics.">
+    <meta name="og:image" content="">
+    <meta name="og:url" content="https://afletchling.github.io/wdd231/finalproject/">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/main-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
@@ -29,7 +35,13 @@
         </nav>
     </header>
     <main>
-        <h1>Advanced Stock Analytics</h1>
+        <h1 id="main-title">Advanced Stock Analytics</h1>
+        <h2 id="main-subtitle">Review, filter, and search analytics all in one place!</h2>
+        <ul class="buttons">
+            <li><a href="review.html">Review</a></li>
+            <li><a href="filter.html">Filter</a></li>
+            <li><a href="search.html">Search</a></li>
+        </ul>
     </main>
     <footer>
         <p>&copy;<span id="currentyear"></span> &#10059; Aiden Fletcher &#10059; Alberta, Canada</p>

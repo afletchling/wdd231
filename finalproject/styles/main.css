@@ -49,14 +49,91 @@ nav a:hover {
 
 main {
     font-family: var(--header-font);
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 body {
     background-color: var(--background-color);
 }
 
+label {
+    font-size: larger;
+}
+
+input {
+    padding: 0.5rem;
+}
+
+form button {
+    padding: 0.5rem;
+}
+
+section {
+    display: grid;
+    grid-template-areas:
+        "title title"
+        "desc desc";
+    color: white;
+    padding: 2rem;
+    background-color: var(--primary-color);
+    width: max-content;
+    border-radius: 2cap;
+    gap: 1rem;
+}
+
+section h2 {
+    grid-area: title;
+}
+
+section p {
+    font-size: large;
+    grid-area: desc;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    font-family: var(--header-font);
+}
+
 /* Class Selectors */
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+.buttons li {
+    list-style: none;
+}
+
+.buttons a {
+    display: block;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin: 1rem;
+    color: white;
+    border-radius: 1rem;
+    border: 1px solid var(--highlight-color);
+}
+
+.buttons a:hover {
+    background-color: var(--highlight-color);
+}
 
 .active {
     background-color: var(--selected-color);
@@ -85,6 +162,28 @@ body {
     text-align: center;
     font-size: 1.2rem;
     padding: 1rem;
+}
+
+#main-title {
+    font-weight: normal;
+    font-size: 3rem;
+}
+
+#main-subtitle {
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+#card-holder {
+    display: grid;
+    grid-template-areas:
+        "a"
+        "b"
+        "c";
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem auto;
 }
 
 #menu {

@@ -13,6 +13,12 @@
         flex-direction: row;
     }
 
+    section {
+        grid-template-areas:
+            "title desc"
+            "title desc";
+    }
+
     /* Class Selectors */
 
     .navigation {
@@ -20,6 +26,12 @@
     }
 
     /* ID Selectors */
+
+    #card-holder {
+        grid-template-areas:
+            "a b"
+            "c d";
+    }
 
     #menu {
         display: none;
