@@ -10,5 +10,8 @@ export default [
     "FTS",
     "DNG",
     "HUT",
-    "VNP"
+    "VNP",
+    "ORCL",
+    "SNDK",
+    "API"
 ];

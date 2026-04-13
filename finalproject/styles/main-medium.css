@@ -1,0 +1,10 @@
+@media (min-width: 40.5em) {
+    /* ID Selectors */
+
+    #card-holder {
+        grid-template-areas:
+            "a b"
+            "c d"
+            "e f";
+    }
+}
