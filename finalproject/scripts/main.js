@@ -12,15 +12,23 @@ async function run() {
     if (cardHolder) {
         const { default: companyData } = await import('./companies.mjs');
 
-        function fetchData(stocks) {
+        async function fetchData(stocks) {
             let data = [];
 
-            for (const stock of stocks) { // I realized that all stock api's are not really available for commercial use, so this project will fall flat in such.
-                data.push({
-                    name: stock,
-                    h: Math.floor(Math.random() * 10000) / 10,
-                    l: Math.floor(Math.random() * 10000) / 10
-                });
+            try
+            {
+                let reqData = await fetch("./data/stocks.json");
+                reqData = await reqData.json();
+
+                for (const stock of reqData) {
+                    if (stocks.includes(stock.name)) {
+                        data.push(stock);
+                    }
+                }
+            }
+            catch (exp)
+            {
+                console.error(exp);
             }
 
             return data;
@@ -48,7 +56,7 @@ async function run() {
                 cardHolder.removeChild(card);
             }
             cards = [];
-            stocks = fetchData(stocks);
+            stocks = await fetchData(stocks);
 
             if (filter) {
                 stocks = stocks.filter(filter);
