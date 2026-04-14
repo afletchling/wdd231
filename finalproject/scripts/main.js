@@ -1,17 +1,23 @@
 const cardHolder = document.getElementById('card-holder');
 const searchHolder = document.getElementById('search-form');
 const filterHolder = document.getElementById('filter-holder');
+const lastVisit = document.getElementById('last-visit');
 const navButton = document.getElementById('menu');
 const navHolder = document.querySelector('.navigation');
 
 let cards = [];
 const filters = {
     'All': () => true,
-    'Above 200': (data) => data.h > 200,
-    'Below 200': (data) => data.h < 200,
+    'Above 150': (data) => data.h > 150,
+    'Below 150': (data) => data.h <= 150,
 };
 
 async function run() {
+    if (lastVisit) {
+        lastVisit.textContent = new Date(Number.parseInt(localStorage.getItem('lastVisited') || Date.now())).toLocaleString('en-US');
+        localStorage.setItem('lastVisited', Date.now());
+    }
+
     if (cardHolder) {
         const { default: companyData } = await import('./companies.mjs');
 
@@ -94,11 +100,11 @@ async function run() {
     }
 }
 
-run();
-
 if (navButton) {
     navButton.addEventListener('click', () => {
         navButton.classList.toggle('active');
         navHolder.classList.toggle('active');
     });
 }
+
+run();

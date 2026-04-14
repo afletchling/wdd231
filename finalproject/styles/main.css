@@ -105,6 +105,11 @@ footer {
     font-family: var(--header-font);
 }
 
+footer a {
+    text-decoration: none;
+    color: var(--background-color);
+}
+
 /* Class Selectors */
 
 .buttons {
